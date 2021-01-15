@@ -37,11 +37,21 @@ if __name__ == "__main__":
 q1 = input("Hello, What's your name? ")
 print("Hello", str(q1), "my name is chatbot Bristol!")
 
+
+
+
+
 q2 = input("Are you doing good today? ")
-if q2 == "no" or "No":
+
+if q2 == "no" or q2 == "No":
   print("I'm sorry to hear that.")
   q3 = input("Could I make you feel better with a joke? ")
   if q3 == "yes" or "sure" or "ok":
     print("Why did the chicken cross the road...")
     time.sleep(4)
     print("to get to the other side!")
+  elif q3 == "no" or q3 == "no"
+elif q2 == "stop" or q2 == "stop talking" or q2 == "stop talking to me":
+  print("Alright then, chatbot Bristol powering off...")
+else:
+  print("Sorry, im not sure how to respond to this.")
