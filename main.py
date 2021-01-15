@@ -9,6 +9,7 @@ import os
 import importlib.util
 
 import random
+import time
 
 def run_tests():
   """
@@ -32,3 +33,15 @@ if __name__ == "__main__":
   t = input("Run pytest? (y/n)").lower()
   if t == 'y':
     run_tests()
+
+q1 = input("Hello, What's your name? ")
+print("Hello", str(q1), "my name is chatbot Bristol!")
+
+q2 = input("Are you doing good today? ")
+if q2 == "no" or "No":
+  print("I'm sorry to hear that.")
+  q3 = input("Could I make you feel better with a joke? ")
+  if q3 == "yes" or "sure" or "ok":
+    print("Why did the chicken cross the road...")
+    time.sleep(4)
+    print("to get to the other side!")
