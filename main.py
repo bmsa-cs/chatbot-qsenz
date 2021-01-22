@@ -47,11 +47,13 @@ if q2 == "no" or q2 == "No":
   print("I'm sorry to hear that.")
   q3 = input("Could I make you feel better with a joke? ")
   if q3 == "yes" or "sure" or "ok":
-    one = "Why did the chicken cross the road? To get to the other side!"
-    two = "I invented a new word... Plagarism!"
-    three = "Hear about the new resturant called karma? Heres the menu: You get what you deserve."
-    joke = random.choice([one, two, three])
-    print(joke)
+    joke1 = random.randint(1,3)
+    if joke1 == 1:
+      print("Why did the chicken cross the road? To get to the other side!")
+    elif joke1 == 2:
+      print("I invented a new word... Plagarism!")
+    elif joke1 == 3:
+      print("Hear about the new resturant called karma? Heres the menu: You get what you deserve.")
   elif q3 == "no" or q3 == "nope" or q3 == "No":
     print("Alright then i'll go.")
     exit()
@@ -63,11 +65,14 @@ elif q2 == "yes" or q2 == "yeah" or q2 == "Yes":
   print("That's very nice to hear!")
   q4 = input("Would you like to hear a joke?")
   if q4 == "yes" or q4 == "Yes" or q4 == "sure":
-    one = "Why did the chicken cross the road? To get to the other side!"
-    two = "I invented a new word... Plagarism!"
-    three = "Hear about the new resturant called karma? Heres the menu: You get what you deserve."
-    joke = random.choice([one, two, three])
-    print(joke)
+    joke1 = random.randint(1,3)
+    if joke1 == 1:
+      print("Why did the chicken cross the road? To get to the other side!")
+    elif joke1 == 2:
+      print("I invented a new word... Plagarism!")
+    elif joke1 == 3:
+      print("Hear about the new resturant called karma? Heres the menu: You get what you deserve.")
+
 else:
   print("Sorry, im not sure how to respond to this.")
   exit()
